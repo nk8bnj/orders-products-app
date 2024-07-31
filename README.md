@@ -6,11 +6,11 @@
 
 ## Used technologies
 
+- HTML / CSS / SCSS
 - TypeScript
 - Next.js
 - Redux Toolkit
 - Axios
-- HTML / CSS / SCSS
 - Docker
 
 ## Setup and Run locally
