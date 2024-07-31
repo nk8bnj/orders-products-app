@@ -1,6 +1,5 @@
 {
   "name": "orders-products-app",
-  "homepage": "https://nk8bnj.github.io/orders-products-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d .next"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.6",
@@ -26,7 +25,6 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "gh-pages": "^6.1.1",
     "typescript": "^5"
   }
 }

@@ -20,10 +20,13 @@ const initialState: ProductsState = {
   typeFilter: 'all',
 }
 
+const localURL = 'http://localhost:3000/data/products.json'
+const remoteURL = 'https://orders-products-app.vercel.app/data/products.json'
+
 export const fetchProducts = createAsyncThunk(
   'products/fetchProducts',
   async () => {
-    const response = await axios.get('http://localhost:3000/data/products.json')
+    const response = await axios.get(remoteURL)
     return response.data
   }
 )
@@ -35,7 +38,8 @@ const productsSlice = createSlice({
     setFilter(state, action: PayloadAction<string>) {
       state.filter = action.payload
     },
-    setTypeFilter(state, action) { // Add this reducer
+    setTypeFilter(state, action) {
+      // Add this reducer
       state.typeFilter = action.payload
     },
     deleteProduct(state, action: PayloadAction<number>) {

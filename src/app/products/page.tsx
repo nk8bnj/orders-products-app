@@ -1,39 +1,39 @@
-"use client";
+'use client'
 
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
-import ProductInfo from "@/components/ProductInfo/ProductInfo";
-import { fetchProducts, setFilter, setTypeFilter } from "@/store/productsSlice";
-import { AppDispatch, RootState } from "@/store/store";
+import ProductInfo from '@/components/ProductInfo/ProductInfo'
+import { fetchProducts, setFilter, setTypeFilter } from '@/store/productsSlice'
+import { AppDispatch, RootState } from '@/store/store'
 
-import { IProduct, ProductType } from "@/types/types";
+import { IProduct, ProductType } from '@/types/types'
 
-import styles from "./Products.module.scss";
+import styles from './Products.module.scss'
 
 const Products = () => {
-  const dispatch = useDispatch<AppDispatch>();
+  const dispatch = useDispatch<AppDispatch>()
   const { products, loading, error, filter, typeFilter } = useSelector(
-    (state: RootState) => state.products,
-  );
+    (state: RootState) => state.products
+  )
 
   useEffect(() => {
-    dispatch(fetchProducts());
-  }, [dispatch]);
+    dispatch(fetchProducts())
+  }, [dispatch])
 
   const filteredProducts = products.filter((product: IProduct) => {
-    const trimmedFilter = filter.trim().toLowerCase();
-    const typeMatch = typeFilter === "all" || product.type === typeFilter;
-    return product.name.toLowerCase().includes(trimmedFilter) && typeMatch;
-  });
+    const trimmedFilter = filter.trim().toLowerCase()
+    const typeMatch = typeFilter === 'all' || product.type === typeFilter
+    return product.name.toLowerCase().includes(trimmedFilter) && typeMatch
+  })
 
   const handleFilterChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    dispatch(setFilter(e.target.value));
-  };
+    dispatch(setFilter(e.target.value))
+  }
 
   const handleTypeFilterChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    dispatch(setTypeFilter(e.target.value));
-  };
+    dispatch(setTypeFilter(e.target.value))
+  }
 
   return (
     <div>
@@ -49,8 +49,7 @@ const Products = () => {
         <select
           onChange={handleTypeFilterChange}
           value={typeFilter}
-          className={styles.select}
-        >
+          className={styles.select}>
           <option value={ProductType.All}>All Types</option>
           <option value={ProductType.Laptop}>Laptop</option>
           <option value={ProductType.Monitor}>Monitor</option>
@@ -73,7 +72,7 @@ const Products = () => {
         </>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Products;
+export default Products

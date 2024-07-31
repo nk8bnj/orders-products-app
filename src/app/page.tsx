@@ -1,4 +1,4 @@
-import Products from "./products/page"
+import Products from './products/page'
 
 const Home = () => {
   return <Products />

@@ -12,8 +12,11 @@ const initialState: OrdersState = {
   error: null,
 }
 
+const localURL = 'http://localhost:3000/data/orders.json'
+const remoteURL = 'https://orders-products-app.vercel.app/data/orders.json'
+
 export const fetchOrders = createAsyncThunk('orders/fetchOrders', async () => {
-  const response = await axios.get('http://localhost:3000/data/orders.json')
+  const response = await axios.get(remoteURL)
   return response.data as IOrder[]
 })
 
@@ -22,9 +25,7 @@ const ordersSlice = createSlice({
   initialState,
   reducers: {
     deleteOrder(state, action: PayloadAction<number>) {
-      state.orders = state.orders.filter(
-        (order) => order.id !== action.payload
-      )
+      state.orders = state.orders.filter((order) => order.id !== action.payload)
     },
   },
   extraReducers: (builder) => {
