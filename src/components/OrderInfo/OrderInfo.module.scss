@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  column-gap: 30px;
+  width: 100%;
+
+  .title {
+    width: 40%;
+  }
+
+  .productsAmount {
+    width: 7%;
+  }
+
+  .date {
+    width: 15%;
+  }
+
+  .productType {
+    width: 10%;
+  }
+
+  .deleteIcon {
+    width: 20px;
+    cursor: pointer;
+  }
+
+  .smallText {
+    font-size: 14px;
+    color: #afaeae;
+  }
+
+  p {
+    margin: 0;
+  }
+}

@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.3s ease forwards;
+
+  .content {
+    position: relative;
+    width: 70%;
+    max-width: 700px;
+    margin: auto;
+    padding-top: 30px;
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px solid #888;
+
+    .title {
+      margin-bottom: 30px;
+      padding: 0 30px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 20px;
+      height: 100px;
+      background-color: #39a946;
+
+      &__cancel {
+        align-self: center;
+        margin: 5px;
+        padding: 10px 20px;
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.3s all ease 0s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      &__delete {
+        display: flex;
+        align-items: center;
+        margin: 5px;
+        margin-right: 30px;
+        padding: 10px 20px;
+        background-color: #fff;
+        color: red;
+        border: none;
+        border-radius: 20px;
+        font-size: 20px;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+        box-shadow: 0 0 30px 1px grey;
+        column-gap: 10px;
+        transition: 0.3s all ease 0s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .deleteIcon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .closeButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: -20px;
+      right: -10px;
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 50%;
+      color: #aaa;
+      font-size: 22px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 30px 1px grey;
+      transition: 0.3s all ease 0s;
+
+      &:hover,
+      &:focus {
+        color: red;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

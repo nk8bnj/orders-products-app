@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "MacBook Air M1",
+    "sn": "TBD-2024-07-10-0004",
+    "img": "https://images.vexels.com/content/128243/preview/computer-monitor-flat-icon-2e6132.png",
+    "type": "laptop",
+    "specification": "Specification 1",
+    "isFree": true,
+    "guarantee": {
+      "start": "2024-06-29 12:09:33",
+      "end": "2025-06-29 12:09:33"
+    },
+    "price": 980,
+    "order": 1,
+    "date": "2024-06-29 12:09:33"
+  },
+  {
+    "id": 2,
+    "name": "Samsung UHD Monitor",
+    "sn": "PRC-2024-05-04-0022",
+    "img": "https://images.vexels.com/content/128243/preview/computer-monitor-flat-icon-2e6132.png",
+    "type": "monitor",
+    "specification": "Specification 2",
+    "isFree": false,
+    "guarantee": {
+      "start": "2023-03-29 12:09:33",
+      "end": "2025-03-29 12:09:33"
+    },
+    "price": 400,
+    "order": 2,
+    "date": "2024-01-31 12:09:33"
+  },
+  {
+    "id": 3,
+    "name": "Acer Nitro 5",
+    "sn": "CPL-2024-07-11-0103",
+    "img": "https://images.vexels.com/content/128243/preview/computer-monitor-flat-icon-2e6132.png",
+    "type": "laptop",
+    "specification": "Specification 2",
+    "isFree": true,
+    "guarantee": {
+      "start": "2019-11-15 12:09:33",
+      "end": "2020-03-29 12:09:33"
+    },
+    "price": 330,
+    "order": 3,
+    "date": "2024-02-10 12:09:33"
+  },
+  {
+    "id": 4,
+    "name": "MSI Display Driver",
+    "sn": "QWE-2024-02-03-0009",
+    "img": "https://images.vexels.com/content/128243/preview/computer-monitor-flat-icon-2e6132.png",
+    "type": "monitor",
+    "specification": "Specification 2",
+    "isFree": false,
+    "guarantee": {
+      "start": "2020-11-15 12:09:33",
+      "end": "2021-03-29 12:09:33"
+    },
+    "price": 720,
+    "order": 3,
+    "date": "2024-02-10 12:09:33"
+  },
+  {
+    "id": 5,
+    "name": "IMac M3",
+    "sn": "HGH-2024-07-10-0005",
+    "img": "https://images.vexels.com/content/128243/preview/computer-monitor-flat-icon-2e6132.png",
+    "type": "personal computer",
+    "specification": "Specification 5",
+    "isFree": true,
+    "guarantee": {
+      "start": "2022-12-05 12:09:33",
+      "end": "2023-12-05 12:09:33"
+    },
+    "price": 1145,
+    "order": 4,
+    "date": "2024-01-31 12:09:33"
+  },
+  {
+    "id": 6,
+    "name": "Asus Rog Strix",
+    "sn": "MNO-2024-07-10-0006",
+    "img": "https://images.vexels.com/content/128243/preview/computer-monitor-flat-icon-2e6132.png",
+    "type": "laptop",
+    "specification": "Specification 2",
+    "isFree": true,
+    "guarantee": {
+      "start": "2022-12-05 12:09:33",
+      "end": "2023-12-05 12:09:33"
+    },
+    "price": 210,
+    "order": 1,
+    "date": "2024-01-31 12:09:33"
+  }
+]

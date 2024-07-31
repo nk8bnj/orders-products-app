@@ -1,0 +1,68 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding: 10px 25px;
+  box-sizing: border-box;
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .name {
+    width: 20%;
+  }
+
+  .status {
+    width: 7%;
+  }
+
+  .guarantee {
+    width: 15%;
+  }
+
+  .type {
+    width: 10%;
+  }
+
+  .price {
+    width: 11%;
+  }
+
+  .date {
+    width: 12%;
+  }
+
+  .delete {
+    width: 20px;
+    cursor: pointer;
+  }
+
+  .free {
+    background-color: #55a45e;
+  }
+  .freeText {
+    color: #55a45e;
+  }
+
+  .smallText {
+    font-size: 14px;
+    color: #afaeae;
+  }
+
+  p {
+    margin: 0;
+  }
+}
