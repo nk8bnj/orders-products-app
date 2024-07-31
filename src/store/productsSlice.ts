@@ -20,13 +20,10 @@ const initialState: ProductsState = {
   typeFilter: 'all',
 }
 
-const localURL = 'http://localhost:3000/data/products.json'
-const remoteURL = 'https://orders-products-app.vercel.app/data/products.json'
-
 export const fetchProducts = createAsyncThunk(
   'products/fetchProducts',
   async () => {
-    const response = await axios.get(remoteURL)
+    const response = await axios.get('https://orders-products-app.vercel.app/data/products.json')
     return response.data
   }
 )
