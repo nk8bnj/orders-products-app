@@ -2,8 +2,6 @@
 
 - [DEMO](https://orders-products-app.vercel.app/)
 
-> Important! If you run the project locally, change url to 'localURL' in 'ordersSlice.ts' and 'productsSlice.ts'.
-
 ## Used technologies
 
 - HTML / CSS / SCSS
